@@ -331,21 +331,21 @@
  
   @keyframes glow_name {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ce0202, 0 0 40px #ce0202, 0 0 50px #ce0202, 0 0 60px #ce0202, 0 0 70px #ce0202;
+      text-shadow: 0 0 50px #ff0202, 0 0 50px #ff0202, 0 0 50px #ff0202, 0 0 50px #ff0202, 0 0 50px #ff0202, 0 0 50px #ff0202, 0 0 50px #ff0202;
     }
     
     to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff0202, 0 0 40px #ff0202, 0 0 50px #ff0202, 0 0 60px #ff0202, 0 0 70px #ff0202, 0 0 80px #ff0202;
+      text-shadow: 0 0 50px #ff0202, 0 0 50px #ff0202, 0 0 50px #ff0202, 0 0 50px #ff0202, 0 0 50px #ff0202, 0 0 50px #ff0202, 0 0 50px #ff0202;
     }
   }
 
   @keyframes glow_button {
     from {
-      box-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 10px #ce0202, 0 0 20px #ce0202, 0 0 30px #ce0202, 0 0 40px #ce0202, 0 0 50px #ce0202;
+      box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 5px #ce0202, 0 0 10px #ce0202, 0 0 10px #ce0202, 0 0 20px #ce0202, 0 0 30px #ce0202;
     }
     
     to {
-      box-shadow: 0 0 10px #fff, 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff, 0 0 60px #00ffff;
+      box-shadow: 0 0 10px #fff, 0 0 5px #00ffff, 0 0 5px #00ffff, 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
     }
   }
 
@@ -353,12 +353,11 @@
 
   @keyframes glow_surname {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00dbdb, 0 0 40px #00dbdb, 0 0 50px #00dbdb, 0 0 60px #00dbdb, 0 0 70px #00dbdb;
+      text-shadow: 0 0 50px #00ffff, 0 0 50px #00ffff, 0 0 50px #00ffff, 0 0 50px #00ffff, 0 0 50px #00ffff, 0 0 50px #00ffff, 0 0 50px #00ffff;
     }
     
     to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff, 0 0 60px #00ffff, 0 0 70px #00ffff, 0 0 80px #00ffff;
+      text-shadow: 0 0 50px #00ffff, 0 0 50px #00ffff, 0 0 50px #00ffff, 0 0 50px #00ffff, 0 0 50px #00ffff, 0 0 50px #00ffff, 0 0 50px #00ffff;
     }
 }
 }
-
