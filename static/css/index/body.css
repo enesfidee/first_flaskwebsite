@@ -25,7 +25,14 @@ body{
 }
 */
 
-@media screen and (min-width: 1366px) and (max-width: 1920px) {
+@media screen and (min-width: 1920px) {
+    body{
+        background-image: url(/static/img/bckimage.jpg);
+        background-position: center;
+        }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
     body{
     background-image: url(/static/img/bckimage.jpg);
     background-position: center;
@@ -56,11 +63,10 @@ body{
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
     body{
-        background-image: url(/static/img/bckimage480-800.jpg);
-        width: auto;
-        height: auto;
+        background-image: url(/static/img/bckimage-mobile.jpg);  /* mobile için resimi soldan biraz kırp ve uzunluğunu baya bi arttır. Sonra cover la*/
+        background-size: cover;
         background-repeat: no-repeat;
-        position: absolute;
+        
         
       }
 }
