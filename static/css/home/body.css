@@ -1,147 +1,941 @@
-*{
-  margin:0;
-}
-
-body{
-  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/static/img/bckimage.jpg);
-  background-position:center;
-}
-.back .up_side{
-  height:100px;
-  font-family:Berlin sans FB;
-  font-size:30px;
-  text-align:center;
-}
-
-.back .up_side .title{
-  padding-top:20px;
-}
-
-.back .up_side a{
-  color:#ffd324;
-  font-family:Berlin sans FB;
-  text-decoration: none;
-  font-size:40px;
-  text-align:center;
-}
-.back .left_side{
-  float:left;
-  width:800px;
-  min-height:860px;
-}
-
-.back .left_side .image{
-
-  padding: 50px 0 0 100px;
-}
-
-.back .left_side .image img{
-  width: 600px;
-  height:600px;
-  border: 2px solid #ffffff;
-  -webkit-animation: glow_image 1s ease-in-out infinite alternate;
-  -moz-animation: glow_image 1s ease-in-out infinite alternate;
-  animation: glow_image 1s ease-in-out infinite alternate;
-}
-
-.back .right_side{
-  float:right;
-  /* background-color: rgb(248, 229, 142); rgb(222, 214, 245)      rgb(248, 229, 142)*/
-  width:585px;
-  min-height:860px;
-}
-
-.back .right_side .hello{
-  padding: 50px 0px 0px 60px; 
-  color:#ffffff;
-  font-family:Berlin sans FB;
-  font-size:50px;
-  position: relative;
-}
-
-.back .right_side .comment{
-  padding: 30px 0px 0px 60px; 
-  color:#ffffff;
-  font-family:verdana;
-  letter-spacing: 1px;
-  font-size:20px;
-  width:450px ;
-  position: relative;
-
-}
-
-@keyframes glow_image {
-    from {
-      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 5px #d60000, 0 0 10px #d60000, 0 0 15px #d60000, 0 0 20px #d60000, 0 0 30px #d60000;
-    }
-  
-    to {
-      box-shadow: 0 0 20px #fff, 0 0 5px #00d4d4, 0 0 10px #00d4d4, 0 0 15px #00d4d4, 0 0 20px #00d4d4, 0 0 25px #00d4d4, 0 0 30px #00d4d4;
-    }
-  }
-
-
-  /* -------------------------------------------------------------------------------------*/
-
-  .back .up_side .btn{
-    display: inline-block;
-    border: 2px solid #ffffff;
-    width: 200px;
-    height: 45px;
-    top: 20px;
-    right: 20px;
-    line-height:45px;
-    position: absolute;
-    overflow: hidden;
-    -webkit-animation: glow_button 1s ease-in-out infinite alternate;
-    -moz-animation: glow_button 1s ease-in-out infinite alternate;
-    animation: glow_button 1s ease-in-out infinite alternate;
+@media screen and (min-width:1920px) {
+  *{
+    margin:0;
   }
   
-  .back .up_side .btn a{
-    color: #ffffff;
+  body{
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/static/img/bckimage.jpg);
+    background-position:center;
+  }
+  .back .up_side{
+    height:100px;
+    font-family:Berlin sans FB;
+    font-size:30px;
+    text-align:center;
+  }
+  
+  .back .up_side .title{
+    padding-top:20px;
+  }
+  
+  .back .up_side a{
+    color:#ffd324;
+    font-family:Berlin sans FB;
     text-decoration: none;
-    font-size:25px;
-    letter-spacing: 1px;             /*normalde 5px*/
-    display: block;
+    font-size:40px;
+    text-align:center;
+  }
+  .back .left_side{
+    float:left;
+    width:800px;
+    min-height:860px;
+  }
+  
+  .back .left_side .image{
+  
+    padding: 50px 0 0 100px;
+  }
+  
+  .back .left_side .image img{
+    width: 600px;
+    height:600px;
+    border: 2px solid #ffffff;
+    -webkit-animation: glow_image 1s ease-in-out infinite alternate;
+    -moz-animation: glow_image 1s ease-in-out infinite alternate;
+    animation: glow_image 1s ease-in-out infinite alternate;
+  }
+  
+  .back .right_side{
+    float:left;
+    /* background-color: rgb(248, 229, 142); rgb(222, 214, 245)      rgb(248, 229, 142)*/
+    min-width:500px;
+    min-height:860px;
+  }
+  
+  .back .right_side .hello{
+    padding: 50px 0px 0px 60px; 
+    color:#ffffff;
+    font-family:Berlin sans FB;
+    font-size:50px;
     position: relative;
-    z-index: 999;
-    font-weight: bold;
-    transition: all 0.5s ease;
-    font-family: Century Gothic;    /*sonradan ekledim*/
   }
   
-  .back .up_side .btn a:hover{
-    color: #000000;
+  .back .right_side .comment{
+    padding: 30px 0px 0px 60px; 
+    color:#ffffff;
+    font-family:verdana;
+    letter-spacing: 1px;
+    font-size:20px;
+    width:450px ;
+    position: relative;
+  
   }
   
-  .back .up_side .btn.btn_1:before{
-    content: "";
-    position: absolute;
+  @keyframes glow_image {
+      from {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 5px #d60000, 0 0 10px #d60000, 0 0 15px #d60000, 0 0 20px #d60000, 0 0 30px #d60000;
+      }
+    
+      to {
+        box-shadow: 0 0 20px #fff, 0 0 5px #00d4d4, 0 0 10px #00d4d4, 0 0 15px #00d4d4, 0 0 20px #00d4d4, 0 0 25px #00d4d4, 0 0 30px #00d4d4;
+      }
+    }
+  
+  
+    /* -------------------------------------------------------------------------------------*/
+  
+    .back .up_side .btn{
+      display: inline-block;
+      border: 2px solid #ffffff;
+      width: 200px;
+      height: 45px;
+      top: 20px;
+      right: 20px;
+      line-height:45px;
+      position: absolute;
+      overflow: hidden;
+      -webkit-animation: glow_button 1s ease-in-out infinite alternate;
+      -moz-animation: glow_button 1s ease-in-out infinite alternate;
+      animation: glow_button 1s ease-in-out infinite alternate;
+    }
+    
+    .back .up_side .btn a{
+      color: #ffffff;
+      text-decoration: none;
+      font-size:25px;
+      letter-spacing: 1px;             /*normalde 5px*/
+      display: block;
+      position: relative;
+      z-index: 999;
+      font-weight: bold;
+      transition: all 0.5s ease;
+      font-family: Century Gothic;    /*sonradan ekledim*/
+    }
+    
+    .back .up_side .btn a:hover{
+      color: #000000;
+    }
+    
+    .back .up_side .btn.btn_1:before{
+      content: "";
+      position: absolute;
+      top: -60px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      transform: skewY(10deg);
+      transition: all 0.5s ease;
+    }
+    
+    .back .up_side .btn.btn_1:after{
+      content: "";
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      transform: skewY(10deg);
+      transition: all 0.5s ease;
+    }
+    
+    .back .up_side .btn.btn_1:hover:before{
+      top: -20px;
+    }
+    .back .up_side .btn.btn_1:hover:after{
+      top: 20px;
+    }
+  
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+  *{
+    margin:0;
+  }
+  
+  body{
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/static/img/bckimage.jpg);
+    background-position:center;
+  }
+  .back .up_side{
+    height:100px;
+    font-family:Berlin sans FB;
+    font-size:30px;
+    text-align:center;
+  }
+  
+  .back .up_side .title{
+    padding-top:20px;
+  }
+  
+  .back .up_side a{
+    color:#ffd324;
+    font-family:Berlin sans FB;
+    text-decoration: none;
+    font-size:40px;
+    text-align:center;
+  }
+  .back .left_side{
+    float:left;
+    width:800px;
+    min-height:860px;
+  }
+  
+  .back .left_side .image{
+  
+    padding: 50px 0 0 100px;
+  }
+  
+  .back .left_side .image img{
+    width: 600px;
+    height:600px;
+    border: 2px solid #ffffff;
+    -webkit-animation: glow_image 1s ease-in-out infinite alternate;
+    -moz-animation: glow_image 1s ease-in-out infinite alternate;
+    animation: glow_image 1s ease-in-out infinite alternate;
+  }
+  
+  .back .right_side{
+    float:left;
+    /* background-color: rgb(248, 229, 142); rgb(222, 214, 245)      rgb(248, 229, 142)*/
+    min-width:500px;
+    min-height:860px;
+  }
+  
+  .back .right_side .hello{
+    padding: 50px 0px 0px 60px; 
+    color:#ffffff;
+    font-family:Berlin sans FB;
+    font-size:50px;
+    position: relative;
+  }
+  
+  .back .right_side .comment{
+    padding: 30px 0px 0px 60px; 
+    color:#ffffff;
+    font-family:verdana;
+    letter-spacing: 1px;
+    font-size:20px;
+    width:450px ;
+    position: relative;
+  
+  }
+  
+  @keyframes glow_image {
+      from {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 5px #d60000, 0 0 10px #d60000, 0 0 15px #d60000, 0 0 20px #d60000, 0 0 30px #d60000;
+      }
+    
+      to {
+        box-shadow: 0 0 20px #fff, 0 0 5px #00d4d4, 0 0 10px #00d4d4, 0 0 15px #00d4d4, 0 0 20px #00d4d4, 0 0 25px #00d4d4, 0 0 30px #00d4d4;
+      }
+    }
+  
+  
+    /* -------------------------------------------------------------------------------------*/
+  
+    .back .up_side .btn{
+      display: inline-block;
+      border: 2px solid #ffffff;
+      width: 200px;
+      height: 45px;
+      top: 20px;
+      right: 20px;
+      line-height:45px;
+      position: absolute;
+      overflow: hidden;
+      -webkit-animation: glow_button 1s ease-in-out infinite alternate;
+      -moz-animation: glow_button 1s ease-in-out infinite alternate;
+      animation: glow_button 1s ease-in-out infinite alternate;
+    }
+    
+    .back .up_side .btn a{
+      color: #ffffff;
+      text-decoration: none;
+      font-size:25px;
+      letter-spacing: 1px;             /*normalde 5px*/
+      display: block;
+      position: relative;
+      z-index: 999;
+      font-weight: bold;
+      transition: all 0.5s ease;
+      font-family: Century Gothic;    /*sonradan ekledim*/
+    }
+    
+    .back .up_side .btn a:hover{
+      color: #000000;
+    }
+    
+    .back .up_side .btn.btn_1:before{
+      content: "";
+      position: absolute;
+      top: -60px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      transform: skewY(10deg);
+      transition: all 0.5s ease;
+    }
+    
+    .back .up_side .btn.btn_1:after{
+      content: "";
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      transform: skewY(10deg);
+      transition: all 0.5s ease;
+    }
+    
+    .back .up_side .btn.btn_1:hover:before{
+      top: -20px;
+    }
+    .back .up_side .btn.btn_1:hover:after{
+      top: 20px;
+    }
+  
+}
+
+@media screen and (min-width: 960px) and (max-width: 1365px) {
+  *{
+    margin:0;
+  }
+  
+  body{
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/static/img/bckimage.jpg);
+    background-position:center;
+  }
+  .back .up_side{
+    height:100px;
+    font-family:Berlin sans FB;
+    font-size:30px;
+    text-align:center;
+  }
+  
+  .back .up_side .title{
+    padding-top:20px;
+  }
+  
+  .back .up_side a{
+    color:#ffd324;
+    font-family:Berlin sans FB;
+    text-decoration: none;
+    font-size:40px;
+    text-align:center;
+  }
+  .back .left_side{
+    float:left;
+    width:800px;
+    min-height:860px;
+  }
+  
+  .back .left_side .image{
+  
+    padding: 50px 0 0 100px;
+  }
+  
+  .back .left_side .image img{
+    width: 600px;
+    height:600px;
+    border: 2px solid #ffffff;
+    -webkit-animation: glow_image 1s ease-in-out infinite alternate;
+    -moz-animation: glow_image 1s ease-in-out infinite alternate;
+    animation: glow_image 1s ease-in-out infinite alternate;
+  }
+  
+  .back .right_side{
+    float:left;
+    /* background-color: rgb(248, 229, 142); rgb(222, 214, 245)      rgb(248, 229, 142)*/
+    min-width:500px;
+    min-height:860px;
+  }
+  
+  .back .right_side .hello{
+    padding: 50px 0px 0px 60px; 
+    color:#ffffff;
+    font-family:Berlin sans FB;
+    font-size:50px;
+    position: relative;
+  }
+  
+  .back .right_side .comment{
+    padding: 30px 0px 0px 60px; 
+    color:#ffffff;
+    font-family:verdana;
+    letter-spacing: 1px;
+    font-size:20px;
+    width:450px ;
+    position: relative;
+  
+  }
+  
+  @keyframes glow_image {
+      from {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 5px #d60000, 0 0 10px #d60000, 0 0 15px #d60000, 0 0 20px #d60000, 0 0 30px #d60000;
+      }
+    
+      to {
+        box-shadow: 0 0 20px #fff, 0 0 5px #00d4d4, 0 0 10px #00d4d4, 0 0 15px #00d4d4, 0 0 20px #00d4d4, 0 0 25px #00d4d4, 0 0 30px #00d4d4;
+      }
+    }
+  
+  
+    /* -------------------------------------------------------------------------------------*/
+  
+    .back .up_side .btn{
+      display: inline-block;
+      border: 2px solid #ffffff;
+      width: 200px;
+      height: 45px;
+      top: 20px;
+      right: 20px;
+      line-height:45px;
+      position: absolute;
+      overflow: hidden;
+      -webkit-animation: glow_button 1s ease-in-out infinite alternate;
+      -moz-animation: glow_button 1s ease-in-out infinite alternate;
+      animation: glow_button 1s ease-in-out infinite alternate;
+    }
+    
+    .back .up_side .btn a{
+      color: #ffffff;
+      text-decoration: none;
+      font-size:25px;
+      letter-spacing: 1px;             /*normalde 5px*/
+      display: block;
+      position: relative;
+      z-index: 999;
+      font-weight: bold;
+      transition: all 0.5s ease;
+      font-family: Century Gothic;    /*sonradan ekledim*/
+    }
+    
+    .back .up_side .btn a:hover{
+      color: #000000;
+    }
+    
+    .back .up_side .btn.btn_1:before{
+      content: "";
+      position: absolute;
+      top: -60px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      transform: skewY(10deg);
+      transition: all 0.5s ease;
+    }
+    
+    .back .up_side .btn.btn_1:after{
+      content: "";
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      transform: skewY(10deg);
+      transition: all 0.5s ease;
+    }
+    
+    .back .up_side .btn.btn_1:hover:before{
+      top: -20px;
+    }
+    .back .up_side .btn.btn_1:hover:after{
+      top: 20px;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 959px) {
+  *{
+    margin:0;
+  }
+  
+  body{
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(/static/img/bckimage-mobile.jpg);  /* mobile için resimi soldan biraz kırp ve uzunluğunu baya bi arttır. Sonra cover la*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+  }
+  .back .up_side{
+    height:60px;
+    font-family:Berlin sans FB;
+    font-size:30px;
+    text-align:center;
+  }
+  
+  .back .up_side .title{
+    padding-left: 20px;
+    padding-top:20px;
+    text-align: left;
+  }
+  
+  .back .up_side .title .baslık{
+    color:#ffd324;
+    font-family:Berlin sans FB;
+    text-decoration: none;
+    font-size:40px;
+    position: relative;
+    clear: both;
     top: -60px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-    transform: skewY(10deg);
-    transition: all 0.5s ease;
+  }
+  .back .left_side{
+    float:left;
+    width:300px;
+    min-height:500px;
   }
   
-  .back .up_side .btn.btn_1:after{
-    content: "";
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-    transform: skewY(10deg);
-    transition: all 0.5s ease;
+  .back .left_side .image{
+  
+    padding: 50px 0 0 20px;
   }
   
-  .back .up_side .btn.btn_1:hover:before{
-    top: -20px;
+  .back .left_side .image img{
+    margin: auto;
+    width: 260px;
+    height:400px;
+    border: 2px solid #ffffff;
+    -webkit-animation: glow_image 1s ease-in-out infinite alternate;
+    -moz-animation: glow_image 1s ease-in-out infinite alternate;
+    animation: glow_image 1s ease-in-out infinite alternate;
   }
-  .back .up_side .btn.btn_1:hover:after{
-    top: 20px;
+  
+  .back .right_side{
+    float:bottom;
+    /* background-color: rgb(248, 229, 142); rgb(222, 214, 245)      rgb(248, 229, 142)*/
+    width:290px;
+    padding-left: 0px;
+    min-height:860px;
+  }
+  
+  .back .right_side .hello{
+    padding: 0px 0px 0px 0px; 
+    color:#ffffff;
+    font-family:Berlin sans FB;
+    font-size:50px;
+    top: 80px;
+    left: 20px;
+    position: relative;
+  }
+  
+  .back .right_side .comment{
+    padding: 20px 0px 0px 20px; 
+    
+    color:#ffffff;
+    font-family:verdana;
+    letter-spacing: 1px;
+    font-size:17px;
+    width:300px ;
+    position: relative;
+  
+  }
+  
+  @keyframes glow_image {
+      from {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 5px #d60000, 0 0 10px #d60000, 0 0 15px #d60000, 0 0 20px #d60000, 0 0 30px #d60000;
+      }
+    
+      to {
+        box-shadow: 0 0 20px #fff, 0 0 5px #00d4d4, 0 0 10px #00d4d4, 0 0 15px #00d4d4, 0 0 20px #00d4d4, 0 0 25px #00d4d4, 0 0 30px #00d4d4;
+      }
+    }
+  
+  
+    /* -------------------------------------------------------------------------------------*/
+  
+    .back .up_side .btn{
+      display: inline-block;
+      border: 2px solid #ffffff;
+      width: 150px;
+      height: 45px;
+      top: 570px;
+      left: -55px;
+      line-height:45px;
+      position: relative;
+      overflow: hidden;
+      -webkit-animation: glow_button 1s ease-in-out infinite alternate;
+      -moz-animation: glow_button 1s ease-in-out infinite alternate;
+      animation: glow_button 1s ease-in-out infinite alternate;
+    }
+    
+    .back .up_side .btn a{
+      color: #ffffff;
+      text-decoration: none;
+      font-size:20px;
+      letter-spacing: 1px;             /*normalde 5px*/
+      display: block;
+      position: relative;
+      z-index: 999;
+      font-weight: bold;
+      transition: all 0.5s ease;
+      font-family: Century Gothic;    /*sonradan ekledim*/
+    }
+    
+    .back .up_side .btn a:hover{
+      color: #000000;
+    }
+    
+    .back .up_side .btn.btn_1:before{
+      content: "";
+      position: absolute;
+      top: -60px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      transform: skewY(10deg);
+      transition: all 0.5s ease;
+    }
+    
+    .back .up_side .btn.btn_1:after{
+      content: "";
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      transform: skewY(10deg);
+      transition: all 0.5s ease;
+    }
+    
+    .back .up_side .btn.btn_1:hover:before{
+      top: -20px;
+    }
+    .back .up_side .btn.btn_1:hover:after{
+      top: 20px;
+    }
+  
+}
+
+@media screen and (min-width: 480px) and (max-width: 719px) {
+  *{
+    margin:0;
+  }
+  
+  body{
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(/static/img/bckimage-mobile.jpg);  /* mobile için resimi soldan biraz kırp ve uzunluğunu baya bi arttır. Sonra cover la*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+  }
+  .back .up_side{
+    height:60px;
+    font-family:Berlin sans FB;
+    font-size:30px;
+    text-align:center;
+  }
+  
+  .back .up_side .title{
+    padding-left: 20px;
+    padding-top:20px;
+    text-align: left;
+  }
+  
+  .back .up_side .title .baslık{
+    color:#ffd324;
+    font-family:Berlin sans FB;
+    text-decoration: none;
+    font-size:40px;
+    position: relative;
+    clear: both;
+    top: -60px;
+  }
+  .back .left_side{
+    float:left;
+    width:300px;
+    min-height:500px;
+  }
+  
+  .back .left_side .image{
+  
+    padding: 50px 0 0 20px;
+  }
+  
+  .back .left_side .image img{
+    margin: auto;
+    width: 260px;
+    height:400px;
+    border: 2px solid #ffffff;
+    -webkit-animation: glow_image 1s ease-in-out infinite alternate;
+    -moz-animation: glow_image 1s ease-in-out infinite alternate;
+    animation: glow_image 1s ease-in-out infinite alternate;
+  }
+  
+  .back .right_side{
+    float:bottom;
+    /* background-color: rgb(248, 229, 142); rgb(222, 214, 245)      rgb(248, 229, 142)*/
+    width:290px;
+    padding-left: 0px;
+    min-height:860px;
+  }
+  
+  .back .right_side .hello{
+    padding: 0px 0px 0px 0px; 
+    color:#ffffff;
+    font-family:Berlin sans FB;
+    font-size:50px;
+    top: 80px;
+    left: 20px;
+    position: relative;
+  }
+  
+  .back .right_side .comment{
+    padding: 20px 0px 0px 20px; 
+    
+    color:#ffffff;
+    font-family:verdana;
+    letter-spacing: 1px;
+    font-size:17px;
+    width:300px ;
+    position: relative;
+  
+  }
+  
+  @keyframes glow_image {
+      from {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 5px #d60000, 0 0 10px #d60000, 0 0 15px #d60000, 0 0 20px #d60000, 0 0 30px #d60000;
+      }
+    
+      to {
+        box-shadow: 0 0 20px #fff, 0 0 5px #00d4d4, 0 0 10px #00d4d4, 0 0 15px #00d4d4, 0 0 20px #00d4d4, 0 0 25px #00d4d4, 0 0 30px #00d4d4;
+      }
+    }
+  
+  
+    /* -------------------------------------------------------------------------------------*/
+  
+    .back .up_side .btn{
+      display: inline-block;
+      border: 2px solid #ffffff;
+      width: 150px;
+      height: 45px;
+      top: 570px;
+      left: -55px;
+      line-height:45px;
+      position: relative;
+      overflow: hidden;
+      -webkit-animation: glow_button 1s ease-in-out infinite alternate;
+      -moz-animation: glow_button 1s ease-in-out infinite alternate;
+      animation: glow_button 1s ease-in-out infinite alternate;
+    }
+    
+    .back .up_side .btn a{
+      color: #ffffff;
+      text-decoration: none;
+      font-size:20px;
+      letter-spacing: 1px;             /*normalde 5px*/
+      display: block;
+      position: relative;
+      z-index: 999;
+      font-weight: bold;
+      transition: all 0.5s ease;
+      font-family: Century Gothic;    /*sonradan ekledim*/
+    }
+    
+    .back .up_side .btn a:hover{
+      color: #000000;
+    }
+    
+    .back .up_side .btn.btn_1:before{
+      content: "";
+      position: absolute;
+      top: -60px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      transform: skewY(10deg);
+      transition: all 0.5s ease;
+    }
+    
+    .back .up_side .btn.btn_1:after{
+      content: "";
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      transform: skewY(10deg);
+      transition: all 0.5s ease;
+    }
+    
+    .back .up_side .btn.btn_1:hover:before{
+      top: -20px;
+    }
+    .back .up_side .btn.btn_1:hover:after{
+      top: 20px;
+    }
+  
+  
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  body{
+      background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(/static/img/bckimage-mobile.jpg);  /* mobile için resimi soldan biraz kırp ve uzunluğunu baya bi arttır. Sonra cover la*/
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+      
+    }
+    .back .up_side{
+      height:60px;
+      font-family:Berlin sans FB;
+      font-size:30px;
+      text-align:center;
+    }
+    
+    .back .up_side .title{
+      padding-left: 20px;
+      padding-top:20px;
+      text-align: left;
+    }
+    
+    .back .up_side .title .baslık{
+      color:#ffd324;
+      font-family:Berlin sans FB;
+      text-decoration: none;
+      font-size:40px;
+      position: relative;
+      clear: both;
+      top: -60px;
+    }
+    .back .left_side{
+      float:left;
+      width:300px;
+      min-height:500px;
+    }
+    
+    .back .left_side .image{
+    
+      padding: 50px 0 0 20px;
+    }
+    
+    .back .left_side .image img{
+      margin: auto;
+      width: 260px;
+      height:400px;
+      border: 2px solid #ffffff;
+      -webkit-animation: glow_image 1s ease-in-out infinite alternate;
+      -moz-animation: glow_image 1s ease-in-out infinite alternate;
+      animation: glow_image 1s ease-in-out infinite alternate;
+    }
+    
+    .back .right_side{
+      float:bottom;
+      /* background-color: rgb(248, 229, 142); rgb(222, 214, 245)      rgb(248, 229, 142)*/
+      width:290px;
+      padding-left: 0px;
+      min-height:860px;
+    }
+    
+    .back .right_side .hello{
+      padding: 0px 0px 0px 0px; 
+      color:#ffffff;
+      font-family:Berlin sans FB;
+      font-size:50px;
+      top: 80px;
+      left: 20px;
+      position: relative;
+    }
+    
+    .back .right_side .comment{
+      padding: 20px 0px 0px 20px; 
+      
+      color:#ffffff;
+      font-family:verdana;
+      letter-spacing: 1px;
+      font-size:17px;
+      width:300px ;
+      position: relative;
+    
+    }
+    
+    @keyframes glow_image {
+        from {
+          box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 5px #d60000, 0 0 10px #d60000, 0 0 15px #d60000, 0 0 20px #d60000, 0 0 30px #d60000;
+        }
+      
+        to {
+          box-shadow: 0 0 20px #fff, 0 0 5px #00d4d4, 0 0 10px #00d4d4, 0 0 15px #00d4d4, 0 0 20px #00d4d4, 0 0 25px #00d4d4, 0 0 30px #00d4d4;
+        }
+      }
+    
+    
+      /* -------------------------------------------------------------------------------------*/
+    
+      .back .up_side .btn{
+        display: inline-block;
+        border: 2px solid #ffffff;
+        width: 150px;
+        height: 45px;
+        top: 570px;
+        left: -55px;
+        line-height:45px;
+        position: relative;
+        overflow: hidden;
+        -webkit-animation: glow_button 1s ease-in-out infinite alternate;
+        -moz-animation: glow_button 1s ease-in-out infinite alternate;
+        animation: glow_button 1s ease-in-out infinite alternate;
+      }
+      
+      .back .up_side .btn a{
+        color: #ffffff;
+        text-decoration: none;
+        font-size:20px;
+        letter-spacing: 1px;             /*normalde 5px*/
+        display: block;
+        position: relative;
+        z-index: 999;
+        font-weight: bold;
+        transition: all 0.5s ease;
+        font-family: Century Gothic;    /*sonradan ekledim*/
+      }
+      
+      .back .up_side .btn a:hover{
+        color: #000000;
+      }
+      
+      .back .up_side .btn.btn_1:before{
+        content: "";
+        position: absolute;
+        top: -60px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        transform: skewY(10deg);
+        transition: all 0.5s ease;
+      }
+      
+      .back .up_side .btn.btn_1:after{
+        content: "";
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        transform: skewY(10deg);
+        transition: all 0.5s ease;
+      }
+      
+      .back .up_side .btn.btn_1:hover:before{
+        top: -20px;
+      }
+      .back .up_side .btn.btn_1:hover:after{
+        top: 20px;
+      }
+    
+  
+
+
   }
